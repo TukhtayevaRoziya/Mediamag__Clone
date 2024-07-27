@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+:where(.css-dev-only-do-not-override-1uq9j6g).ant-btn-default {
+  background-color: transparent;
+  color: #838383;
+  border: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+:where(.css-dev-only-do-not-override-1uq9j6g).ant-space {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+:where(.css-dev-only-do-not-override-1uq9j6g).ant-btn-default:not(
+    :disabled
+  ):not(.ant-btn-disabled):hover {
   color: white;
+  border: none;
+  background-color: transparent;
+}
+:where(.css-dev-only-do-not-override-1uq9j6g).ant-btn-primary,
+:where(.css-dev-only-do-not-override-1uq9j6g).ant-modal .ant-modal-close:hover,
+:where(.css-dev-only-do-not-override-1uq9j6g).ant-btn-primary:not(
+    :disabled
+  ):not(.ant-btn-disabled):hover {
+  background-color: transparent;
 }
 
-.App-link {
-  color: #61dafb;
+:where(.css-dev-only-do-not-override-1uq9j6g).ant-btn-primary {
+  box-shadow: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+:where(.css-dev-only-do-not-override-1uq9j6g).ant-btn:not(
+    :disabled
+  ):focus-visible {
+  outline: none;
+}
+.ant-modal-footer {
+  display: none;
+}
+
+div#\:r7\:,
+div#\:r5\: {
+  color: #1c1c1c;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+:where(.css-dev-only-do-not-override-1uq9j6g).ant-modal .ant-modal-content{
+  padding: 35px 40px 40px;
 }
