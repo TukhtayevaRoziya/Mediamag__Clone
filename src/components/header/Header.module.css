@@ -1,7 +1,7 @@
 .body {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 4% 0 5%;
+  padding: 2rem 4% 2rem 5%;
 }
 .block_1 h1,
 .block_1 p {
