@@ -17,7 +17,7 @@ import style from "./Header.module.css";
 
 const Header = () => {
   const [modal2Open, setModal2Open] = useState(false);
-  const [sm_sidebar, setSm_sidebar] = useState(false);
+  // const [sm_sidebar, setSm_sidebar] = useState(false);
 
   return (
     <div className={style.body}>

@@ -1,0 +1,42 @@
+.body{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.body h1{
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 26px;
+    color: #111;
+    margin-right: 50px;
+}
+
+.images img{
+width: 70px;
+cursor: pointer;
+margin: 0 10px;
+}
+
+.images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:670px) {
+    .body{
+        flex-direction: column;
+    }
+    .body h1{
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:430px) {
+.images img{
+    width: 40px;
+}
+}
