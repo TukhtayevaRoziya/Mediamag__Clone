@@ -6,11 +6,13 @@ import Payment from "./components/payment/Payment";
 import About from "./components/about/About";
 import Catalog from "./components/catalog/Catalog";
 import Discount from "./components/discount/Discount";
+import Sidebar from "./components/sidebar/Sidebar";
 
 function App() {
   return <div className="App">
     <MiniHeader/>
     <Header />
+    <Sidebar/>
     <Catalog/>
     <Discount/>
     <About />
