@@ -125,7 +125,7 @@
 
 @media screen and (max-width:1260px) {
   .body{
-    padding: 2rem 4% 0 30px    ;
+    padding: 2rem 4% 1rem 30px    ;
   }
   .block_2,
   .block_3{
@@ -173,7 +173,7 @@
 
 @media screen and (max-width:670px) {
   .body{
-    padding: 1rem 4% 0 30px;
+    padding: 1rem 4% 1rem 30px;
   }
   .block_md{
     display: none;
