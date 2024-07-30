@@ -68,8 +68,9 @@ div#\:r5\: {
 :where(.css-dev-only-do-not-override-1pg9a38).ant-carousel .slick-prev,
 :where(.css-dev-only-do-not-override-1pg9a38).ant-carousel .slick-next {
   color: #1c1c1c;
-
 }
-.slick-active:has(.Sidebar_first__YGcnh){
-  
+@media screen and (max-width: 1260px) {
+  :where(.css-dev-only-do-not-override-1pg9a38).ant-drawer .ant-drawer-body {
+    padding: 0 20px;
+  }
 }

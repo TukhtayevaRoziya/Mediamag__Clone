@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Button, Dropdown, Modal, Space } from "antd";
 import { IoPersonCircleOutline } from "react-icons/io5";
 
-import uz from '../../assets/uzFlag.png'
-import ru from '../../assets/ruFlag.png'
+import uz from "../../assets/uzFlag.png";
+import ru from "../../assets/ruFlag.png";
 
 import style from "./MiniHeader.module.css";
 
@@ -45,22 +45,21 @@ const MiniHeader = () => {
       </div>
       <div className={style.block_2}>
         <Button type="primary" onClick={() => setModal2Open(true)}>
-        <IoPersonCircleOutline />
-        Kirish / Ro'yxatdan o'tish
+          <IoPersonCircleOutline />
+          Kirish / Ro'yxatdan o'tish
         </Button>
         <Modal
-          title={ ` Kabinet`}
+          title={` Kabinet`}
           centered
           open={modal2Open}
           onOk={() => setModal2Open(false)}
           onCancel={() => setModal2Open(false)}
         >
-           <div className={style.model}>
-
-<input type="text" placeholder="Login" />
-<input type="text" placeholder="Parol*" />
-  </div>
-  <button className={style.btn}>Kirish</button>
+          <div className={style.model}>
+            <input type="text" placeholder="Login" />
+            <input type="text" placeholder="Parol*" />
+          </div>
+          <button className={style.btn}>Kirish</button>
         </Modal>
         <span>
           <img src={uz} alt="" />

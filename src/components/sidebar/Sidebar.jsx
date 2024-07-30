@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Layout, Menu, theme } from "antd";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { IoSearch } from "react-icons/io5";
@@ -6,6 +6,7 @@ import { FaFilter } from "react-icons/fa";
 import { SlBasket } from "react-icons/sl";
 import { Carousel } from "antd";
 
+import MyDrawer from './drawer/Drawer'
 import style from "./Sidebar.module.css";
 
 const { Sider } = Layout;
@@ -106,18 +107,21 @@ const items2 = sidebar.map((s, index) => {
         }),
   };
 });
-const contentStyle = {
-  margin: 0,
-  height: "160px",
-  color: "#fff",
-  lineHeight: "160px",
-  textAlign: "center",
-  background: "#364d79",
-};
+
 const Sidebar = () => {
   const {
     token: { colorBgContainer },
   } = theme.useToken();
+
+  const [open, setOpen] = useState(false);
+
+  const showDrawer = () => {
+    setOpen(true);
+  };
+
+  const onClose = () => {
+    setOpen(false);
+  };
 
   return (
     <div className={style.body}>
@@ -138,6 +142,7 @@ const Sidebar = () => {
       </div>
       <div className={style.main}>
         <div className={style.main_header}>
+          <div className={style.sm_catalog}  onClick={showDrawer}><HiOutlineMenuAlt2 /> Каталог</div>
           <div className={style.search}>
             <input type="text" placeholder="Поиск..." />
             <IoSearch />
@@ -151,6 +156,8 @@ const Sidebar = () => {
             <span>0</span>
           </div>
         </div>
+        <div>
+
         <Carousel arrows className={style.carousel} infinite={true}>
           <div className={style.box} id={style.first}>
             <div>
@@ -164,7 +171,10 @@ const Sidebar = () => {
               <h1>Допускается ли рассрочка в Шариате?</h1>
             </div>
           </div>
+
         </Carousel>
+        </div>
+      <MyDrawer isClose={onClose} isOpen={open}/>
       </div>
     </div>
   );

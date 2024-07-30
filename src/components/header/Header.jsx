@@ -14,11 +14,20 @@ import uz from "../../assets/uzFlag.png";
 import ru from "../../assets/ruFlag.png";
 
 import style from "./Header.module.css";
+import MyDrawer from "../sidebar/drawer/Drawer";
 
 const Header = () => {
   const [modal2Open, setModal2Open] = useState(false);
   // const [sm_sidebar, setSm_sidebar] = useState(false);
+  const [open, setOpen] = useState(false);
 
+  const showDrawer = () => {
+    setOpen(true);
+  };
+
+  const onClose = () => {
+    setOpen(false);
+  };
   return (
     <div className={style.body}>
       <div className={style.block_1}>
@@ -90,7 +99,9 @@ const Header = () => {
         </div>
       </div>
       <div className={style.block_sm}>
-        <RiAlignLeft />
+        <RiAlignLeft onClick={showDrawer} />
+      <MyDrawer isClose={onClose} isOpen={open}/>
+
         <div style={{ cursor: "pointer" }}>
           <img src={logo} alt="" />
           <p>mediamag.uz</p>
