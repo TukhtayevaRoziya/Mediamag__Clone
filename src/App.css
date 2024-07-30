@@ -42,6 +42,34 @@ div#\:r5\: {
   font-weight: 600;
 }
 
-:where(.css-dev-only-do-not-override-1uq9j6g).ant-modal .ant-modal-content{
+:where(.css-dev-only-do-not-override-1uq9j6g).ant-modal .ant-modal-content {
   padding: 35px 40px 40px;
+}
+
+:where(.css-dev-only-do-not-override-1pg9a38).ant-menu-light:not(
+    .ant-menu-horizontal
+  )
+  .ant-menu-submenu-title:hover {
+  background-color: transparent;
+}
+
+:where(.css-dev-only-do-not-override-1pg9a38).ant-menu-light
+  .ant-menu-item-selected {
+  background-color: #e1343a25;
+  color: #fff;
+}
+
+:where(.css-dev-only-do-not-override-1pg9a38).ant-menu-light
+  .ant-menu-submenu-selected
+  > .ant-menu-submenu-title {
+  color: #1c1c1c;
+}
+
+:where(.css-dev-only-do-not-override-1pg9a38).ant-carousel .slick-prev,
+:where(.css-dev-only-do-not-override-1pg9a38).ant-carousel .slick-next {
+  color: #1c1c1c;
+
+}
+.slick-active:has(.Sidebar_first__YGcnh){
+  
 }
