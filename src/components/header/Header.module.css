@@ -147,6 +147,7 @@
   }
   .block_md .md_padding .md_btn:hover {
     color: #000;
+    background-color: transparent;
   }
   .md_btn svg{
     color: #e13439;

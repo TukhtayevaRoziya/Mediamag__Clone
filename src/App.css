@@ -1,3 +1,8 @@
+:where(.css-1pg9a38).ant-btn-default,
+:where(.css-dev-only-do-not-override-1pg9a38).ant-btn-default,
+:where(.css-dev-only-do-not-override-1pg9a38).ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover,
+:where(.css-1pg9a38).ant-btn-default,
+:where(.css-1pg9a38).ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover,
 :where(.css-dev-only-do-not-override-1uq9j6g).ant-btn-default {
   background-color: transparent;
   color: #838383;
@@ -7,6 +12,7 @@
 :where(.css-dev-only-do-not-override-1uq9j6g).ant-space {
   justify-content: center;
 }
+:where(.css-1pg9a38).ant-btn-primary,
 :where(.css-dev-only-do-not-override-1uq9j6g).ant-btn-default:not(
     :disabled
   ):not(.ant-btn-disabled):hover {
@@ -14,12 +20,15 @@
   border: none;
   background-color: transparent;
 }
+:where(.css-dev-only-do-not-override-1pg9a38).ant-btn-primary,
+:where(.css-dev-only-do-not-override-1pg9a38).ant-btn-primary:hover,
 :where(.css-dev-only-do-not-override-1uq9j6g).ant-btn-primary,
 :where(.css-dev-only-do-not-override-1uq9j6g).ant-modal .ant-modal-close:hover,
 :where(.css-dev-only-do-not-override-1uq9j6g).ant-btn-primary:not(
     :disabled
   ):not(.ant-btn-disabled):hover {
   background-color: transparent;
+box-shadow: none;
 }
 
 :where(.css-dev-only-do-not-override-1uq9j6g).ant-btn-primary {
@@ -45,7 +54,7 @@ div#\:r5\: {
 :where(.css-dev-only-do-not-override-1uq9j6g).ant-modal .ant-modal-content {
   padding: 35px 40px 40px;
 }
-
+:where(.css-1pg9a38).ant-btn-primary,
 :where(.css-dev-only-do-not-override-1pg9a38).ant-menu-light:not(
     .ant-menu-horizontal
   )
@@ -58,7 +67,7 @@ div#\:r5\: {
   background-color: #e1343a25;
   color: #fff;
 }
-
+:where(.css-1pg9a38).ant-menu-light .ant-menu-submenu-selected >.ant-menu-submenu-title,
 :where(.css-dev-only-do-not-override-1pg9a38).ant-menu-light
   .ant-menu-submenu-selected
   > .ant-menu-submenu-title {
@@ -69,7 +78,11 @@ div#\:r5\: {
 :where(.css-dev-only-do-not-override-1pg9a38).ant-carousel .slick-next {
   color: #1c1c1c;
 }
+:where(.css-1pg9a38).ant-menu .ant-menu-submenu-arrow{
+  color: #1c1c1c;
+}
 @media screen and (max-width: 1260px) {
+  :where(.css-1pg9a38).ant-drawer .ant-drawer-body,
   :where(.css-dev-only-do-not-override-1pg9a38).ant-drawer .ant-drawer-body {
     padding: 0 20px;
   }
