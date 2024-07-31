@@ -127,9 +127,9 @@ const Discount = ({ product }) => {
               <div className={style.buy_btn}>
                 <div>
                   <span
-                  style={{color: count == 0 ? 'grey' : '#e13439'}}
+                  style={{color: count === 0 ? 'grey' : '#e13439'}}
                     onClick={() => {
-                      count != 0 && setCount(count - 1);
+                      count !== 0 && setCount(count - 1);
                     }}
                   >
                     <CiCircleMinus />
