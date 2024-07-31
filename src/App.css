@@ -54,6 +54,7 @@ div#\:r5\: {
 :where(.css-dev-only-do-not-override-1uq9j6g).ant-modal .ant-modal-content {
   padding: 35px 40px 40px;
 }
+:where(.css-1pg9a38).ant-menu-light:not(.ant-menu-horizontal) .ant-menu-submenu-title:hover,
 :where(.css-1pg9a38).ant-btn-primary,
 :where(.css-dev-only-do-not-override-1pg9a38).ant-menu-light:not(
     .ant-menu-horizontal
@@ -61,7 +62,7 @@ div#\:r5\: {
   .ant-menu-submenu-title:hover {
   background-color: transparent;
 }
-
+:where(.css-1pg9a38).ant-menu-light .ant-menu-item-selected,
 :where(.css-dev-only-do-not-override-1pg9a38).ant-menu-light
   .ant-menu-item-selected {
   background-color: #e1343a25;
