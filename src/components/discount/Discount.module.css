@@ -109,7 +109,42 @@
   font-size: 14px;
   font-weight: 400;
 }
+.buy_btn div,
+.buy_price,
+.buy_btn,
+.buy_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.buy_model img{
+width: 100px;
+}
+
+.buy_header h1{
+  font-size: 18px;
+    color: #c1c1c1;
+}
+
+.buy_price h1{
+  font-size: 20px;
+}
+
+.buy_btn div span{
+  margin: 5px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #e13439;
+}
+.buy_btn button{
+  border: none;
+  background-color: #e13439;
+  color: white;
+  border-radius: 4px;
+  padding: 8px 24px;
+  cursor: pointer;
+}
 @media screen and (max-width: 1260px) {
   .body {
     padding: 30px 4% 30px;
@@ -207,5 +242,18 @@
   .button button {
     font-size: 20px;
     padding: 15px;
+  }
+}
+
+
+@media screen and (max-width:500px) {
+  .buy_header h1{
+    font-size: 15px;
+  }
+  .buy_price h1{
+    font-size: 12px;
+  }
+  .buy_btn button{
+    font-size: 12px;
   }
 }

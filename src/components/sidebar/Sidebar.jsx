@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import { Layout, Menu, theme } from "antd";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { IoSearch } from "react-icons/io5";
@@ -8,6 +8,9 @@ import { Carousel } from "antd";
 
 import MyDrawer from './drawer/Drawer'
 import style from "./Sidebar.module.css";
+import { getAction } from "../../redux/actions/readAction";
+import { GET_BASKET } from "../../redux/actions/types";
+import { useDispatch, useSelector } from "react-redux";
 
 const { Sider } = Layout;
 
@@ -109,6 +112,12 @@ const items2 = sidebar.map((s, index) => {
 });
 
 const Sidebar = () => {
+  const dispatch = useDispatch();
+  const {basket} = useSelector(state => state.basketReducer);
+
+  useEffect(() => {
+    dispatch(getAction(GET_BASKET)); // Fetch basket data on component mount
+  }, [dispatch]);
   const {
     token: { colorBgContainer },
   } = theme.useToken();
@@ -153,7 +162,7 @@ const Sidebar = () => {
           <div className={style.basket}>
             <SlBasket />
             <h1>Корзина</h1>
-            <span>0</span>
+            <span>{basket}</span>
           </div>
         </div>
         <div>
